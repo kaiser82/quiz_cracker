@@ -8,7 +8,7 @@ const Question = ({ quest }) => {
     return (
         <div className='lg:w-2/3 mx-auto space-y-6 shadow-lg m-5 p-5 rounded-lg'>
 
-            <h4 className='text-xl font-semibold'>Quiz: {question}</h4>
+            <h4 className='text-xl font-semibold text-indigo-800'>Quiz: {question}</h4>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                 {
                     options.map(option => <Option option={option}></Option>)
