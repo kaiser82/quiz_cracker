@@ -8,11 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Question = ({ quest, total, i }) => {
-    // console.log(i)
     // console.log(quest)
 
     const { question, correctAnswer, options } = quest;
-    const showAnswer = () => toast(`Correct answer is: ${correctAnswer} `)
+    const showAnswer = () => toast.info(`Correct answer is: ${correctAnswer}.`, { theme: "colored", });
 
     return (
         <div className='lg:w-2/3 mx-auto space-y-6 shadow-lg m-5 p-5 rounded-lg '>
