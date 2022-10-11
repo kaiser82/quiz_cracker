@@ -7,18 +7,19 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const Question = ({ quest, total }) => {
+const Question = ({ quest, total, i }) => {
+    // console.log(i)
     // console.log(quest)
 
     const { question, correctAnswer, options } = quest;
     const showAnswer = () => toast(`Correct answer is: ${correctAnswer} `)
 
     return (
-        <div className='lg:w-2/3 mx-auto space-y-6 shadow-lg m-5 p-5 rounded-lg'>
+        <div className='lg:w-2/3 mx-auto space-y-6 shadow-lg m-5 p-5 rounded-lg '>
 
             <div className='grid grid-cols-6 gap-4 justify-center items-center '>
-                <h4 className='col-span-6 md:col-span-5 text-xl font-semibold text-indigo-800'>Quiz: {question}</h4>
-                <FontAwesomeIcon onClick={showAnswer} className=' text-lg text-indigo-700 ml-20 cursor-pointer' icon={faEye} />
+                <h4 className='col-span-6 md:col-span-5 text-xl font-semibold text-indigo-800'>Quiz {i}: {question}</h4>
+                <FontAwesomeIcon onClick={showAnswer} className=' text-xl text-indigo-700 ml-20 cursor-pointer' icon={faEye} />
                 <ToastContainer />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
