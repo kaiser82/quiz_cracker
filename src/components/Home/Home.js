@@ -6,7 +6,7 @@ const Home = () => {
     const topics = useLoaderData().data;
     // console.log(topics)
     return (
-        <div className='bg-gray-100'>
+        <div className='bg-gray-100 p-2'>
 
             <div className="bg-[url('https://www.news-medical.net/images/news/ImageForNews_722328_16605707865419041.jpg')] h-[150px] md:h-[250px] mb-5 bg-cover flex items-center justify-center">
                 <h2 className='text-3xl md:text-5xl font-semibold text-white'>Test Your Brain Size</h2>

@@ -11,7 +11,7 @@ const Option = ({ option, correctAnswer }) => {
             return toast.success('correct answer.', { theme: "colored", })
         }
         else {
-            return toast.error('wrong answer!!', { theme: "colored", })
+            return toast.error('wrong answer!!', { theme: "colored" })
         }
     }
 

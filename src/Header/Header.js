@@ -20,7 +20,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-5 font-semibold">
-                        <NavLink to='/'>Home</NavLink>
+                        <NavLink className={({ isActive }) => 'underline' + isActive ? 'active' : ''} to='/'>Home</NavLink>
                         <NavLink to='/statistics'>Statistics</NavLink>
                         <NavLink to='blog'>Blog</NavLink>
                     </ul>
