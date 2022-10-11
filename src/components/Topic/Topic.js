@@ -15,7 +15,7 @@ const Topic = ({ topic }) => {
                         <p>Number of Quiz: {total}</p>
                     </div>
                     <div className="card-actions justify-end items-center">
-                        <Link to={`/quizzes/${id}`}><button className="btn btn-md btn-primary">Take Quiz</button></Link>
+                        <Link to={`/quizzes/${id}`}><button className="btn btn-md btn-primary">Take A Quiz</button></Link>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Option = ({ option }) => {
-    console.log(option)
+const Option = ({ option, correctAnswer }) => {
+    console.log(correctAnswer)
+    const [quiz, setQuiz] = useState();
+    console.log(quiz)
+    // if (quiz === correctAnswer) {
+    //     alert("correct")
+    // }
+    // quiz === correctAnswer ? alert('correct') : alert('wrong');
+
     return (
         <div className='flex items-center border border-indigo-500 p-3 rounded-lg'>
-            <input type="radio" name="radio-2" className="radio radio-primary" />
+            <input onChange={(e) => setQuiz(e.target.value)} type="radio" name="quiz" value={option} className="radio radio-primary" />
             <p className='text-left pl-3'>{option}</p>
 
         </div>
