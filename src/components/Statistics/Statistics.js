@@ -7,7 +7,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const Statistics = () => {
     const quizData = useLoaderData().data;
-    console.log(quizData)
+    // console.log(quizData)
 
 
 

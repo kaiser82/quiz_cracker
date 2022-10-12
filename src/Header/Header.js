@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
+
+    let activeClassName = "underline";
     return (
         <nav>
             <div className="navbar bg-indigo-100 px-24 shadow-lg">
@@ -20,9 +22,9 @@ const Header = () => {
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-5 font-semibold">
-                        <NavLink className={({ isActive }) => 'underline' + isActive ? 'active' : ''} to='/'>Home</NavLink>
-                        <NavLink to='/statistics'>Statistics</NavLink>
-                        <NavLink to='blog'>Blog</NavLink>
+                        <NavLink to='/' className={({ isActive }) => isActive ? activeClassName : undefined} >Home</NavLink>
+                        <NavLink to='/statistics' className={({ isActive }) => isActive ? activeClassName : undefined} >Statistics</NavLink>
+                        <NavLink to='/blog' className={({ isActive }) => isActive ? activeClassName : undefined} >Blog</NavLink>
                     </ul>
                 </div>
 
